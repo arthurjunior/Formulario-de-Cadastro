@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de empresario</h1>
+        <p>Complete suas informações</p>
+        <br>
+
+    </div>
+    <form>
+      <fieldset>
+          <div>
+            <label>Nome</label>
+            <input type="text" name="nome" id="nome">
+            <label >Sobrenome</label>
+            <input type="text" name="sobrenome" id="sobrenome" >
+          </div>
+      </fieldset>
+      <div>
+          
+          <label >Email</label>
+          <input type="email" name="email" id="email" >
+        
+      </div>
+
+      <div>
+           <label>Sexo</label> 
+           <label>
+               <input type="radio" name="sex" value="masculino" checked>Masculino
+               
+           </label>
+           <label>
+               <input type="radio" name="sex" value="feminino">Feminino
+           </label>
+           <label>
+               <input type="radio" name="sex" value="naoinformado">Prefiro não informa
+           </label>
+           <div>
+               <label>Estado</label>
+               <select id="Estado">
+                <Option selected disabled value="">Selecione</Option>
+                <option>AC</option>
+                <option>AP</option>
+                <option>AM</option>
+                <option>AL</option>
+                <option>BA</option>
+                <option>CE</option>
+                <option>DF</option>
+                <option>ES</option>
+                <option>GO</option>
+                <option>MG</option>
+                <option>MA</option>
+                <option>MT</option>
+                <option>MS</option>
+                <option>PA</option>
+                <option>PB</option>
+                <option>PE</option>
+                <option>PI</option>
+                <option>PR</option>
+                <option>RS</option> 
+                <option>RO</option>
+                <option>RN</option>
+                <option>RJ</option>
+                <option>SC</option>
+                <option>SP</option>
+                <option>SE</option>
+                <option>TO</option>
+               </select>
+           </div>
+           <div>
+               <fieldset>
+                   <label>Nome da sua empresa </label>
+                   <input type="text" name="empresa" id="empresa">
+                   <br>
+                   <label>CNPJ</label>
+                   <input type="text" name="cnpj" id="cnpj">
+               </fieldset>
+           </div>
+           <div>
+               <label> Conte um pouco sobre a area de atuação de sua empresa</label>
+               <textarea name="sobre" id="sobre" cols="30" rows="6" style="width:  26em;"></textarea>
+           </div>
+      </div>
+      <label>Selecione os parametros de seu interesse </label>
+      <input type="checkbox" id="parametro1" name="parametro1" value="FINANÇAS">
+      <label for="parametro1">FINANÇAS</label>
+      <input type="checkbox" id="parametro2" name="parametro2" value="LOGISTICA">
+      <label for="parametro2">LOGISTICA</label>
+      <input type="checkbox" id="parametro3" name="parametro3" value="TECNOLOGIA-DA-INFORMAÇÃO">
+      <label for="parametro3">TECNOLOGIA DA INFORMÇÃO</label>
+      <input type="checkbox" id="parametro4" name="parametro4" value="MERCADO-NACIONAL">
+      <label for="parametro4">MERCADO NACIONAL </label> 
+       <br>
+      <button type="submit"> Concluir</button>
+    </form>
+</body>
+</html>
